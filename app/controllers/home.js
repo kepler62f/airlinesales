@@ -1,18 +1,18 @@
 require('dotenv').config()
+
+
 var express = require('express'),
   router = express.Router(),
-  Article = require('../models/article');
+  ProductList = require('../models/products');
 
 module.exports = function (app) {
   app.use('/', router);
 };
 
+
 router.get('/', function (req, res, next) {
-  var articles = [new Article(), new Article()];
-    res.render('index', {
-      title: 'Generator-Express MVC',
-      articles: articles
-    });
+	var products = new ProductList().items
+  res.send(products);
 });
 
 
@@ -37,3 +37,15 @@ router.get('/api', function(req, res, next) {
 })
 
 
+
+
+
+//////////////////////////
+
+// router.get('/', function (req, res, next) {
+//   var articles = [new Article(), new Article()];
+//     res.render('index', {
+//       title: 'Generator-Express MVC',
+//       articles: articles
+//     });
+// });
