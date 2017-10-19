@@ -20,7 +20,8 @@
     "glob": "^6.0.4",
     "method-override": "^2.3.0",
     "morgan": "^1.6.1",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "nodemon": "^1.12.1",
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -30,7 +31,7 @@
     "grunt-develop": "^0.4.0",
     "load-grunt-tasks": "^3.2.0",
     "mocha": "^3.0.2",
-    "nodemon": "^1.12.1",
+
     "nyc": "^10.0.0",
     "request": "^2.60.0",
     "supertest": "^2.0.0",
