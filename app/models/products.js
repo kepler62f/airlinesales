@@ -11,9 +11,20 @@
 const fs = require('fs')
 
 function ProductList () {
-	let rawdata = fs.readFileSync(__dirname + '/product.json');
-	// this.products = JSON.parse(rawdata)	
-	return JSON.parse(rawdata)	
+	let rawData = fs.readFileSync(__dirname + '/product.json');
+	let parseData = JSON.parse(rawData).items
+	let productArray = []
+
+	for (let i = 0; i < parseData.length; i++) {
+		productArray[i] = {
+			id: parseData[i].id,
+			name: parseData[i].name,
+			price: parseData[i].price,
+			qty: parseData[i].extension_attributes.stock_item.qty
+		}
+	}
+	
+	return productArray 
 }
 
 // let rawdata = fs.readFileSync(__dirname + '/product.json'); 

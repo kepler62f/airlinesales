@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>{{title }}</title>
-  <link rel="stylesheet" href="/css/style.css">
-  {{#if ENV_DEVELOPMENT}}
+  <title>Airline Sales Analytics</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!-- {{#if ENV_DEVELOPMENT}}
     <script src="http://localhost:35729/livereload.js"></script>
-  {{/if}}
+  {{/if}} -->
 </head>
 <body>
 
+	<div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text"><h3><img src="/img/1200px-AirAsia_New_Logo.svg.png" height="50px" width="50px">Airline Sales Analytics</h3></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li>
+          <a href="">Welcome</a>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Sign Out</a></li>
+      </ul>
+    </div>        
+  </div>
 
   {{{body}}}
 

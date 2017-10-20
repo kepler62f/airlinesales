@@ -1,4 +1,25 @@
+<div class="bodymain">
+  <h4>Products Overview</h4>
 
+  <table class="stack">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price (RM$)</th>
+        <th>Available Qty</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each productList as |product|}}
+      <tr>
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.qty}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
 
-  <h1>{{title }}</h1>
-  <p>Welcome to {{title }}</p>

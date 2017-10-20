@@ -11,8 +11,11 @@ module.exports = function (app) {
 
 
 router.get('/', function (req, res, next) {
-	var products = new ProductList().items
-  res.send(products);
+	// var products = new ProductList().items
+	var products = new ProductList()
+	//console.log(products)
+  //res.send(products);
+  res.render('index', {productList : products})
 });
 
 
