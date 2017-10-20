@@ -1,13 +1,3 @@
-// Example model
-
-
-// function Articles (opts) {
-//   if(!opts) opts = {};
-//   this.title = opts.title || '';
-//   this.url = opts.url || '';
-//   this.text = opts.text || '';
-// }
-
 const fs = require('fs')
 
 function ProductList () {
@@ -27,9 +17,5 @@ function ProductList () {
 	return productArray 
 }
 
-// let rawdata = fs.readFileSync(__dirname + '/product.json'); 
-// const Articles = JSON.parse(rawdata);
-	
-
-module.exports = ProductList;
+module.exports = ProductList
 

@@ -11,6 +11,10 @@ a {
 	padding: 10px;
 }
 
+.tableContainer {
+	width: 1000px;
+}
+
 table {
 	font-size: 12px;
 }
