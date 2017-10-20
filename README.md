@@ -19,5 +19,4 @@ The latest product list and relevant currency exchange rates are displayed on th
 ## Improvements
 
 * Reduce the threshold when table format will change due to resizing of browser window. 
-* Round currency data to 4 decimal places.
 * Obtain time series data so changes over time to products and currency rates could be plotted (For the 'Statistics' feature on left navigation menu).  
