@@ -1,19 +1,10 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}*/
-
 .bodymain {
 	padding: 10px;
 	font-size: 12px;
 }
 
 .tableContainer {
-	width: 1000px;
+	width: 800px;
 }
 
 table {

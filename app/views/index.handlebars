@@ -1,6 +1,4 @@
 <div class="bodymain">
-
-
   <div class="grid-x grid-margin-x">
     <div class="medium-6 large-2 cell">
       <div class="callout">
@@ -22,6 +20,7 @@
               <tr>
                 <th>ID</th>
                 <th>Name</th>
+                <th>Image</th>
                 <th>Price (MYR)</th>
                 <th>Available Qty</th>
               </tr>
@@ -31,6 +30,7 @@
               <tr>
                 <td>{{product.id}}</td>
                 <td>{{product.name}}</td>
+                <td><img src="{{product.imgURL}}" width="150px"></td>
                 <td>{{product.price}}</td>
                 <td>{{product.qty}}</td>
               </tr>
